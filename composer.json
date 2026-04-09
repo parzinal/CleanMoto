@@ -1,0 +1,17 @@
+{
+    "name": "xero-claro/booking-system",
+    "description": "CleanMoto Helmet Cleaning Booking System",
+    "type": "project",
+    "require": {
+        "php": ">=7.4",
+        "phpmailer/phpmailer": "^6.9"
+    },
+    "autoload": {
+        "psr-4": {
+            "XeroClaro\\": "src/"
+        }
+    },
+    "config": {
+        "optimize-autoloader": true
+    }
+}

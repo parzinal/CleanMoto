@@ -1,0 +1,26 @@
+# Dependencies
+/vendor/
+
+# Environment and local overrides
+.env
+.env.*
+!.env.example
+/config/email.local.php
+/config/database.local.php
+
+# Runtime logs and temp files
+/logs/*.log
+/logs/*.tmp
+/logs/*.cache
+
+# User-uploaded avatars (keep folder + placeholder)
+/assets/uploads/avatars/*
+!/assets/uploads/avatars/.gitignore
+
+# IDE / OS noise
+/.idea/
+/.vscode/*
+!/.vscode/settings.json
+!/.vscode/extensions.json
+Thumbs.db
+.DS_Store
