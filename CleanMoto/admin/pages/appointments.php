@@ -20,3 +20,4 @@ if (isset($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQU
     $periodFilter = $_GET['period'] ?? 'all';
     $statusFilter = $_GET['status'] ?? 'all';
     $searchQuery = $_GET['search'] ?? '';
+    $dateFrom = $_GET['from'] ?? '';
