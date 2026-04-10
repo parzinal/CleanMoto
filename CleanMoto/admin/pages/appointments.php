@@ -87,3 +87,4 @@ if (isset($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQU
         $stmt->execute($params);
         $appointments = $stmt->fetchAll(PDO::FETCH_ASSOC);
         
+    } catch (PDOException $e) {
