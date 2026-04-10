@@ -37,4 +37,5 @@ if (isset($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQU
     } elseif ($periodFilter === 'year') {
         $whereConditions[] = "a.appointment_date >= DATE_SUB(CURDATE(), INTERVAL 1 YEAR)";
     }
+    
     // Custom date range
