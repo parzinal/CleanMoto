@@ -69,3 +69,4 @@ if (isset($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQU
         $countStmt = $db->query("SELECT status, COUNT(*) as count FROM appointments GROUP BY status");
         while ($row = $countStmt->fetch()) {
             $statusCounts[$row['status']] = $row['count'];
+            $statusCounts['all'] += $row['count'];
