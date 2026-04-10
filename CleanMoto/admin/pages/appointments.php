@@ -53,3 +53,4 @@ if (isset($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQU
     
     // Search filter
     if (!empty($searchQuery)) {
+        $whereConditions[] = "(a.full_name LIKE :search OR a.contact LIKE :search2 OR a.id LIKE :search3)";
