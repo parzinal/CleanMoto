@@ -94,3 +94,4 @@ if (isset($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQU
     
     // Calculate filtered revenue
     $filteredRevenue = 0;
+    foreach ($appointments as $apt) {
