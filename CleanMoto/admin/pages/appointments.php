@@ -73,3 +73,4 @@ if (isset($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQU
         }
         
         // Fetch filtered appointments
+        $sql = "
