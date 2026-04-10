@@ -11,3 +11,4 @@ if (!isAdmin()) {
 }
 
 $db = Database::getInstance()->getConnection();
+
