@@ -80,3 +80,4 @@ if (isset($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQU
             LEFT JOIN services s ON a.service_id = s.id 
             LEFT JOIN users u ON a.user_id = u.id
             $whereClause
+            ORDER BY a.appointment_date DESC, a.appointment_time DESC
