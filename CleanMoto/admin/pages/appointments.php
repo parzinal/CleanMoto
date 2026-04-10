@@ -83,3 +83,4 @@ if (isset($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQU
             ORDER BY a.appointment_date DESC, a.appointment_time DESC
         ";
         
+        $stmt = $db->prepare($sql);
