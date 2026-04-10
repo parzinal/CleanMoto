@@ -97,3 +97,4 @@ if (isset($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQU
     foreach ($appointments as $apt) {
         if ($apt['status'] === 'completed') {
             $filteredRevenue += $apt['service_price'] * $apt['quantity'];
+        }
