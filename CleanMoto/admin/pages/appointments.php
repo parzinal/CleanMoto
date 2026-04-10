@@ -76,3 +76,4 @@ if (isset($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQU
         $sql = "
             SELECT a.*, s.name as service_name, s.label as service_label, s.price as service_price,
                    u.name as user_name, u.email as user_email
+            FROM appointments a 
