@@ -50,3 +50,4 @@ if (isset($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQU
         $whereConditions[] = "a.status = :status";
         $params[':status'] = $statusFilter;
     }
+    
