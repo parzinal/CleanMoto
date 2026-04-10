@@ -71,3 +71,4 @@ if (isset($_SERVER['HTTP_X_REQUESTED_WITH']) && strtolower($_SERVER['HTTP_X_REQU
             $statusCounts[$row['status']] = $row['count'];
             $statusCounts['all'] += $row['count'];
         }
+        
