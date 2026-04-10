@@ -6,3 +6,4 @@ if (!isLoggedIn()) {
     redirect('login.php');
 }
 
+if (!isAdmin()) {
